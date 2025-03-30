@@ -13,27 +13,56 @@
     </header>
     <nav>
         <a href="#">Inicio</a>
-        <a href="#">Galeria</a>
-        <a href="#">Contacto</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contacto">Contacto</a>
     </nav>
     <div class="container">
         <h2>Galeria</h2>
         <div class="product">
-            <img src="DEMEZA.png" alt="">
+            <img src="DEMEZA.png" alt="Logo DEMEZA">
             <h3>LOGO DEMEZA</h3>
         </div>
         <div class="product">
-            <img src="UNISUR-removebg-preview (3).png" alt="">
+            <img src="UNISUR-removebg-preview (3).png" alt="Logo UNISUR">
             <h3>LOGO UNISUR</h3>
         </div>
         <div class="product">
-            <img src="demo.jpg" alt="">
+            <img src="demo.jpg" alt="Robot">
             <h3>ROBOT</h3>
         </div>
     </div>
+    <section id="galeria">
+        <h2>galeria</h2>
+        <div class="product">
+            <img src="sistema.jpg" alt="sistema">
+            <h3>SISTEMA SOLAR</h3>
+        </div>
+        <div class="product">
+            <img src="agugero.jpg" alt="agugero">
+            <h3>Agujeros negros 101</h3>
+        </div>
+        <div class="product">
+            <img src="andromeda.jpg" alt="andromeda">
+            <h3>GALAXIA DE ANDROMEDA</h3>
+        </div>
+    </section>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="procesar_formulario.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
     
-       <div class="footer">ELABORADO POR PEDRO DEMEZA MORALES</div>
-      </div>
-    </footer>
+    
+    <footer class="footer">ELABORADO POR PEDRO DEMEZA MORALES</footer>
 </body>
 </html>
